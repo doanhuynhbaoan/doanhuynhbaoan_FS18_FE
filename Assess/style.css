@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --width: 1600px;
+  }
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#HOME{
+    background-image: url('./Furniture_shop/header.png');
+    background-repeat: no-repeat;
+    width: var(--width);
+    padding: 30px 0;
+}
+
+.header-bar{
+    display: flex;
+    justify-content: space-around;
+    min-height: 42px;
+}
+
+.header-bar .title{
+    display: flex;
+    flex-direction: row;
+    width:20%;
+    margin-left: 8.5%;
+    min-width: 100px;
+}
+
+.header-bar .title .title-content{
+    margin-left:5%;
+    font-weight: 1000;
+    width: 70%;
+    min-width: 200px;
+}
+
+.header-bar .nav-bar{
+    display: flex;
+    min-width: 500px;
+    align-items: center;
+}
+
+.header-bar .nav-bar-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center ;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.nav-bar-list a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-bar .nav-bar-list .item{
+    font-weight: 550;
+}
+
+.header-bar .right-side{
+    width:25%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 8.5%;
+    min-width: 375px;
+    align-items: end;
+    padding-bottom: 1vh;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content .maintitle{
+    font-weight: 100;
+    padding-top: 5%;
+    font-size: 5rem;
+}
+
+.header-content .description{
+    padding-top: 1%;
+    max-width: 625px;
+    text-align: center;
+}
+
+.header .contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 31%;
+}
+
+.contact .contact-button{
+    cursor: pointer;
+    padding: 1% 2.5%;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffb607;
+    color: white;
+
+}
+
+.services {
+    width: 1600px;
+    margin-bottom: 5%;
+}
+
+.services-head{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-head .services-title-description{
+    line-height: 3rem;
+}
+
+.services-content{
+    margin-top:2%;
+}
+
+.services-content .list-content{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.list-content .content-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   min-height: 260px;
+}
+
+.width-ten-percent{
+    width: 10%;
+}
+
+.content-item p{
+    width: 45%;
+    text-align: center;
+    min-width: 200px;
+}
+
+.content-item button {
+    cursor: pointer;
+    padding: 2% 4%;
+    border-radius: 2px;
+    border: none;
+    background-color: #ffb607;
+    color: white;
+    font-size: 0.7vh;
+}
+
+.phone{
+    color:#ffb607;
+}
+
+.about-us{
+  display: flex;
+  background-color: #ffb607;
+  align-items: center;
+  min-height: 435px;
+  height: auto;
+  width: var(--width);
+}
+
+.about-us .about-us-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    line-height: 1.5rem;
+    margin: 150px 0;
+    margin-left: 200px;
+}
+
+.about-us-left h1{
+    color: white;
+    font-weight: 500;
+}
+
+.about-us-left p{
+    margin: 70px 0;
+    max-width: 500px;
+    color: #fffaee;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.about-us-left button{
+    cursor: pointer;
+    width: 200px;
+    padding: 2% 4%;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+
+.about-us .about-us-right img{
+    width: 50%;
+    min-width: 561px;
+    min-height: 435px;
+    margin: 100px 0;
+    margin-right:200px;
+}
+
+.our-product{
+    margin-top: 100px ;
+    display: flex;
+    width: var(--width);
+    flex-direction: column;
+    min-height: 700px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.our-product .products{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1600px;
+}
+
+.products .product-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 520px;
+    max-width: 558px;
+}
+
+.products h2{
+    font-size: 1rem;
+}
+
+.product-a h2{
+    color: #ffb607;
+}
+
+.product-b h2{
+    color: #ffb607;
+}
+
+.product-a-img{
+    position: relative;
+}
+
+.products .product-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 520px;
+    max-width: 558px;
+}
+
+.circle {
+    position: absolute;
+    top: 180px;
+    left: 240px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px; 
+    background-color: #ffb607;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whoweare{
+    background-image: url(./Furniture_shop/unsplash.png);
+    background-repeat: no-repeat;
+    background-size: var(--width);
+    width: 100%;
+    background-position:0% 60%;
+    position: relative;
+    min-height: 400px;
+    
+}
+
+.background-yellow{
+    position: absolute;
+    background-color: #fbba1f;
+    width: 100%;
+    width: var(--width);
+    min-height: 400px;
+    opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 100px 0;
+}
+
+.background-yellow > p{
+    max-width: 1050px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.background-yellow .button{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.our-project{
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: var(--width);
+    margin: 100px 0;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title p{
+    padding-top: 2%;
+}
+
+.our-project-content{
+    width: var(--width);
+}
+
+.our-project-content-image{
+    align-items: center;  
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-project-content-image-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-project-content-image-container-image{
+    width: 32%;
+    position: relative;
+}
+
+.image-hover{
+    position: absolute; 
+    background-color:rgba(250,186,32,0.7); 
+    width: 350px; 
+    height: 350px; 
+    top:12px;
+    left:12px;
+    border-radius: 20px;
+}
+
+.button-hover{
+    top:40%;
+    left: 25%;
+    border: solid white 1px;
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    background-color: rgba(250,186,32,0);
+}
+
+.our-project-content-image-container-image p {
+    bottom: 45px;
+    left: 60px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+}
+
+.our-project-content-button{
+    background-color: black;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+}
+
+.width40{
+    width: 40%;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-containter{
+    display: flex;
+    align-items: center;
+    min-width: 580px;
+    border: solid 1px;
+    height: 150px;
+    width: 50%;
+}
+.next-our-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--width);
+
+    justify-content: space-around;
+    min-height: 500px;
+    margin: 100px 0 ;
+}
+
+.content-containter-image{
+    position: relative;
+}
+
+.next-our-project-content{
+    display: flex;
+    flex-direction: row ;
+    height: 350px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.next-our-project-content-child{
+    margin-left: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-containter-image-icon{
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+}
+
+.next-our-project-content-0{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    width: var(--width);
+    margin-right: 180px;
+}
+
+ .padding8{
+    padding: 8px;
+ }
+
+.padding16{
+    padding: 16px;
+}
+
+ .content-containter-content p{
+    line-height: 1.6rem;
+ }
+
+ .next-our-project-content-0-icon img{
+    margin: 5px;
+ }
+ 
+.content-containter-content {
+    width: 70%;
+}
+
+.contact-us{
+    background-image: url(./Furniture_shop/unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 950px;
+    width: var(--width);
+    position: relative;
+    display: flex;
+    padding-top : 100px;
+}
+
+.contact-us-yellow{
+    position: absolute;
+    background-color:#ffb300;
+    min-height: 950px;
+    opacity: 75%;
+    width: 100%;
+    top:0%
+}
+
+.contact-us-form{
+    position: absolute;
+    width: 50%;
+    padding-left: 280px;
+    
+}
+
+.contact-us-form-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 365px;
+}
+
+.contact-us-form-form input{
+    
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 20px;
+}
+
+.contact-us-form-button{
+    margin-top: 5%;
+    border: solid 4px white;
+    background-color: rgba(250,186,32,0.5);
+    opacity: 80%;
+    font-size: 1.5rem;
+    padding: 3% 6%;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-us-image{
+    position: absolute;
+    width: 50%;
+    right: 0%;
+}
+
+.design-together{
+    background: url(/Assess/Furniture_shop/unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0% 100%;
+    min-height: 480px;
+    position: relative;
+    width: var(--width);
+}
+
+.design-together-black{
+    position: absolute;
+    background-color: rgba(55, 55, 55,0.95);
+    height: 480px;
+    width: 100%;
+}
+
+.design-together-item{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: var(--width);
+    width: 100%;
+    margin-top: 5%;
+}
+
+.design-together-item-content{
+    max-width: 190px;
+    color: white;
+}
+
+.design-together-item-content>p{
+    margin-top: 40px;
+    line-height: 2rem;
+}
+
+.design-together-i-p{
+    margin-top: 40px;
+    line-height: 2rem;
+}
+
+.design-together-input {
+    margin-top: 10px;
+    min-width: 500px;
+    min-height: 50px;
+    position: relative;
+}
+
+.design-together input{
+    min-width: 550px;
+    min-height: 50px;
+    border: none;
+    background-color:  rgba(55, 55, 55,0);
+    border-bottom: white 1px solid;
+    outline: none;
+    caret-color:white;
+}
+
+.design-together-label{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: -10%;
+    bottom:20px;
+}
+
+.footer {
+    background-color: white;
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-icon button{
+    border: none;
+    cursor: pointer;
+    opacity: 90%;
+}
+
